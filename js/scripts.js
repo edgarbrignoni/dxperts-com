@@ -7,3 +7,6 @@
 // Use this file to add JavaScript to your project
 
 document.querySelectorAll("link[rel=stylesheet]").forEach(link => link.href = link.href.replace(/\?.*|$/, "?" + Date.now()))
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("year").textContent = new Date().getFullYear();
+});
